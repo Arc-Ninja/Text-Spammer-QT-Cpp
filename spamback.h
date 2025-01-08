@@ -11,6 +11,8 @@ private:
     string str;
     int num;
     atomic<bool> run;
+    int maxnum = 0;
+
 public:
     spamback();
     friend class MainWindow;
@@ -18,8 +20,11 @@ public slots:
     void spam(string, int);
     void spam(string);
     void stop();
+
 signals:
     void finished();
+    void started();
+    void progress(int i);
 };
 
 #endif // SPAMBACK_H

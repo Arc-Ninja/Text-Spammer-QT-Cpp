@@ -25,5 +25,8 @@ private:
     spamback* spams;
     Ui::MainWindow *ui;
 
+private slots:
+    void progress();
+
 };
 #endif // MAINWINDOW_H

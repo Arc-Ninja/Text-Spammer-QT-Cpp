@@ -12,17 +12,21 @@ MainWindow::MainWindow(QWidget *parent)
 
 {
     ui->setupUi(this);
+    ui->progressBar->setRange(0,100);
+    ui->progressBar->setValue(0);
 
 
-
-//Thread 1 spambutton and spamstop
+//Thread 1 spambutton and spamstop ------------------------------------
     thread1 = new QThread();
     QObject::connect(ui->spambutt, &QPushButton::clicked, this, [this](){
+
          string text = ui->textbox1->toPlainText().toStdString();
          int num = ui->spamnum->value();
         spams = new spamback();
         spams->moveToThread(thread1);
         thread1->start();
+
+        //invoking spam --------------------
         if(ui->infinitespam->isChecked()){
         QMetaObject::invokeMethod(spams, "spam", Qt::QueuedConnection,
                                   Q_ARG(string, text));
@@ -32,12 +36,29 @@ MainWindow::MainWindow(QWidget *parent)
                                       Q_ARG(string, text),
                                       Q_ARG(int, num));
         }
+        //------------------------------------
 
+        // QObject::connect(spams, &spamback::progress, this, &MainWindow::progress);
+        progress();
+        //disable spam button
+        QObject::connect(spams,&spamback::started, this, [this](){
+            ui->spambutt->setEnabled(false);
+            cout<<"started";
+        } );
+        QObject::connect(spams, &spamback::finished, this, [this](){
+            ui->spambutt->setEnabled(true);
+            cout<<"stopped";
+        });
+        //------------------------
+
+
+        //clearing up ----------------
         QObject::connect(spams, &spamback::finished, thread1, &QThread::quit);
+        //-----------------------
     });
 
 
-    //spamstop
+    //spamstop -------------------------
     QObject::connect(ui->stopbutt, &QPushButton::clicked, this, [this](){
         cout<<"pressed stop"<<endl;
         // spams->run = false;
@@ -46,6 +67,10 @@ MainWindow::MainWindow(QWidget *parent)
         thread1->quit();
 
     });
+    //------------------------------
+
+//---------------------------------------------------------------------------------
+
 
 
 
@@ -62,4 +87,11 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+void MainWindow::progress(){
+    QObject::connect(spams, &spamback::progress, this, [this](int i){
+
+        ui->progressBar->setValue(i);
+    });
+
+}
 
