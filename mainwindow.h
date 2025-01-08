@@ -27,6 +27,8 @@ private:
 
 private slots:
     void progress();
+    void spambutton();
+    void stopbutton();
 
 };
 #endif // MAINWINDOW_H
