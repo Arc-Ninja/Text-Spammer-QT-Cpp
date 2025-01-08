@@ -18,7 +18,7 @@ MainWindow::MainWindow(QWidget *parent)
     stopbutton();
 }
 
-
+//deconstrcutor---------------------
 MainWindow::~MainWindow()
 {
     if(thread1->isRunning()){
@@ -27,7 +27,7 @@ MainWindow::~MainWindow()
     }
     delete ui;
 }
-
+//---------------------------------
 //progress bar fucntion--------------------------
 void MainWindow::progress(){
     QObject::connect(spams, &spamback::progress, this, [this](int i){
@@ -68,11 +68,11 @@ void MainWindow::spambutton(){
         //disable spam button
         QObject::connect(spams,&spamback::started, this, [this](){
             ui->spambutt->setEnabled(false);
-            cout<<"started";
+            // cout<<"started";
         } );
         QObject::connect(spams, &spamback::finished, this, [this](){
             ui->spambutt->setEnabled(true);
-            cout<<"stopped";
+            // cout<<"stopped";
         });
         //------------------------
 
@@ -89,7 +89,7 @@ void MainWindow::spambutton(){
 //stop button function -------------------------------------------------------
 void MainWindow::stopbutton(){
     QObject::connect(ui->stopbutt, &QPushButton::clicked, this, [this](){
-        cout<<"pressed stop"<<endl;
+        // cout<<"pressed stop"<<endl;
         // spams->run = false;
         spams->stop();
 

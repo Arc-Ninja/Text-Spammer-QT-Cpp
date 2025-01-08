@@ -6,7 +6,7 @@ using namespace std;
 
 spamback::spamback(){
 }
-
+//Finite spam function-------------------------
 void spamback::spam(string str, int num){
     emit started();
     run = true;
@@ -16,30 +16,27 @@ void spamback::spam(string str, int num){
         cout<<str<<" "<<num<<endl;
         emit progress((int)(((double)(maxnum-num)/(double)maxnum)*100));
         QThread::msleep(1);
-
-
-
     }
-
     emit finished();
-    // emit progress(0);
-
 
 }
+
+//Infinite spam function ---------------------------------
 void spamback::spam(string str){
     emit started();
     run = true;
-    emit progress(100);
+    emit progress(0);
     while(run){
         cout<<str<<" infinite mode "<<run<<endl;
         QThread::msleep(1);
     }
-
     emit finished();
-    emit progress(0);
+    emit progress(100);
 }
+
+//spam stop fucntion ----------------------------------
 void spamback::stop(){
-    cout<<"STOPPED"<<endl;
+    // cout<<"STOPPED"<<endl;
     run = false;
 }
 
