@@ -81,6 +81,22 @@ build CMakeFiles/spammer.dir/spamback.cpp.obj: CXX_COMPILER__spammer_unscanned_D
   OBJECT_DIR = CMakeFiles\spammer.dir
   OBJECT_FILE_DIR = CMakeFiles\spammer.dir
 
+build CMakeFiles/spammer.dir/keypress.cpp.obj: CXX_COMPILER__spammer_unscanned_Debug C$:/Users/arcsh/OneDrive/Documents/spammer/keypress.cpp || cmake_object_order_depends_target_spammer
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\spammer.dir\keypress.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/arcsh/OneDrive/Documents/spammer/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/spammer_autogen/include -isystem C:/Qt/6.8.1/mingw_64/include/QtCore -isystem C:/Qt/6.8.1/mingw_64/include -isystem C:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.8.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.8.1/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\spammer.dir
+  OBJECT_FILE_DIR = CMakeFiles\spammer.dir
+
+build CMakeFiles/spammer.dir/syswrite.cpp.obj: CXX_COMPILER__spammer_unscanned_Debug C$:/Users/arcsh/OneDrive/Documents/spammer/syswrite.cpp || cmake_object_order_depends_target_spammer
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\spammer.dir\syswrite.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/arcsh/OneDrive/Documents/spammer/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/spammer_autogen/include -isystem C:/Qt/6.8.1/mingw_64/include/QtCore -isystem C:/Qt/6.8.1/mingw_64/include -isystem C:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.8.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.8.1/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\spammer.dir
+  OBJECT_FILE_DIR = CMakeFiles\spammer.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target spammer
@@ -89,7 +105,7 @@ build CMakeFiles/spammer.dir/spamback.cpp.obj: CXX_COMPILER__spammer_unscanned_D
 #############################################
 # Link the executable spammer.exe
 
-build spammer.exe: CXX_EXECUTABLE_LINKER__spammer_Debug CMakeFiles/spammer.dir/spammer_autogen/mocs_compilation.cpp.obj CMakeFiles/spammer.dir/main.cpp.obj CMakeFiles/spammer.dir/mainwindow.cpp.obj CMakeFiles/spammer.dir/spamback.cpp.obj | C$:/Qt/6.8.1/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.8.1/mingw_64/lib/libQt6Gui.a C$:/Qt/6.8.1/mingw_64/lib/libQt6Core.a C$:/Qt/6.8.1/mingw_64/lib/libQt6EntryPoint.a || spammer_autogen spammer_autogen_timestamp_deps
+build spammer.exe: CXX_EXECUTABLE_LINKER__spammer_Debug CMakeFiles/spammer.dir/spammer_autogen/mocs_compilation.cpp.obj CMakeFiles/spammer.dir/main.cpp.obj CMakeFiles/spammer.dir/mainwindow.cpp.obj CMakeFiles/spammer.dir/spamback.cpp.obj CMakeFiles/spammer.dir/keypress.cpp.obj CMakeFiles/spammer.dir/syswrite.cpp.obj | C$:/Qt/6.8.1/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.8.1/mingw_64/lib/libQt6Gui.a C$:/Qt/6.8.1/mingw_64/lib/libQt6Core.a C$:/Qt/6.8.1/mingw_64/lib/libQt6EntryPoint.a || spammer_autogen spammer_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -g
   LINK_FLAGS = -mwindows
   LINK_LIBRARIES = C:/Qt/6.8.1/mingw_64/lib/libQt6Widgets.a  C:/Qt/6.8.1/mingw_64/lib/libQt6Gui.a  C:/Qt/6.8.1/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -lmingw32  C:/Qt/6.8.1/mingw_64/lib/libQt6EntryPoint.a  -lshell32  -ld3d11  -ldxgi  -ldxguid  -ld3d12  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32

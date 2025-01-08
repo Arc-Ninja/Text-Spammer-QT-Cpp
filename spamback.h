@@ -2,7 +2,7 @@
 #define SPAMBACK_H
 #include <bits/stdc++.h>
 #include <QObject>
-
+#include "syswrite.h"
 using namespace std;
 class spamback : public QObject
 {
@@ -12,6 +12,8 @@ private:
     int num;
     atomic<bool> run;
     int maxnum = 0;
+    syswrite swrite;
+
 
 public:
     spamback();

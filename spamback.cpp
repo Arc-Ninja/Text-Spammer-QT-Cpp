@@ -11,15 +11,21 @@ void spamback::spam(string str, int num){
     emit started();
     run = true;
     maxnum = max(maxnum,num);
-
+   //spam loop --------------------------
     while(num-->0 && run){
-        cout<<str<<" "<<num<<endl;
+        // cout<<str<<" "<<num<<endl;
+        //keypress events------------------------------------
+
+        swrite.writeOut(str);
+        //----------------------------------------------------
         emit progress((int)(((double)(maxnum-num)/(double)maxnum)*100));
         QThread::msleep(1);
     }
     emit finished();
-
+    //------------------------------------
 }
+
+
 
 //Infinite spam function ---------------------------------
 void spamback::spam(string str){
@@ -27,7 +33,11 @@ void spamback::spam(string str){
     run = true;
     emit progress(0);
     while(run){
-        cout<<str<<" infinite mode "<<run<<endl;
+        // cout<<str<<" infinite mode "<<run<<endl;
+        //keypress events------------------------------------
+
+        swrite.writeOut(str);
+        //----------------------------------------------------
         QThread::msleep(1);
     }
     emit finished();

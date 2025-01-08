@@ -266,6 +266,18 @@
 	"HEADERS" : 
 	[
 		[
+			"C:/Users/arcsh/OneDrive/Documents/spammer/decitohexa.h",
+			"MU",
+			"EWIEGA46WW/moc_decitohexa.cpp",
+			null
+		],
+		[
+			"C:/Users/arcsh/OneDrive/Documents/spammer/keypress.h",
+			"MU",
+			"EWIEGA46WW/moc_keypress.cpp",
+			null
+		],
+		[
 			"C:/Users/arcsh/OneDrive/Documents/spammer/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
@@ -275,6 +287,12 @@
 			"C:/Users/arcsh/OneDrive/Documents/spammer/spamback.h",
 			"MU",
 			"EWIEGA46WW/moc_spamback.cpp",
+			null
+		],
+		[
+			"C:/Users/arcsh/OneDrive/Documents/spammer/syswrite.h",
+			"MU",
+			"EWIEGA46WW/moc_syswrite.cpp",
 			null
 		]
 	],
@@ -349,13 +367,15 @@
 	"SETTINGS_FILE" : "C:/Users/arcsh/OneDrive/Documents/spammer/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/CMakeFiles/spammer_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "C:/Users/arcsh/OneDrive/Documents/spammer/keypress.cpp", "MU", null ],
 		[ "C:/Users/arcsh/OneDrive/Documents/spammer/main.cpp", "MU", null ],
 		[
 			"C:/Users/arcsh/OneDrive/Documents/spammer/mainwindow.cpp",
 			"MU",
 			null
 		],
-		[ "C:/Users/arcsh/OneDrive/Documents/spammer/spamback.cpp", "MU", null ]
+		[ "C:/Users/arcsh/OneDrive/Documents/spammer/spamback.cpp", "MU", null ],
+		[ "C:/Users/arcsh/OneDrive/Documents/spammer/syswrite.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

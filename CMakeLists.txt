@@ -24,6 +24,10 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
         spamback.h spamback.cpp
+        keypress.h keypress.cpp
+        decitohexa.h
+        syswrite.h syswrite.cpp
+
 
     )
 # Define target properties for Android with Qt 6 as:
