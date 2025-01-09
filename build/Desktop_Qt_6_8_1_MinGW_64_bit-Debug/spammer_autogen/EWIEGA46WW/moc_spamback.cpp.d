@@ -1,6 +1,7 @@
 C:/Users/arcsh/OneDrive/Documents/spammer/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/spammer_autogen/EWIEGA46WW/moc_spamback.cpp: C:/Users/arcsh/OneDrive/Documents/spammer/spamback.h \
   C:/Users/arcsh/OneDrive/Documents/spammer/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/spammer_autogen/moc_predefs.h \
   C:/Qt/6.8.1/mingw_64/include/QtCore/QObject \
+  C:/Qt/6.8.1/mingw_64/include/QtCore/QThread \
   C:/Qt/6.8.1/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.8.1/mingw_64/include/QtCore/q20memory.h \
   C:/Qt/6.8.1/mingw_64/include/QtCore/q20type_traits.h \
@@ -30,6 +31,8 @@ C:/Users/arcsh/OneDrive/Documents/spammer/build/Desktop_Qt_6_8_1_MinGW_64_bit-De
   C:/Qt/6.8.1/mingw_64/include/QtCore/qcontainertools_impl.h \
   C:/Qt/6.8.1/mingw_64/include/QtCore/qdarwinhelpers.h \
   C:/Qt/6.8.1/mingw_64/include/QtCore/qdatastream.h \
+  C:/Qt/6.8.1/mingw_64/include/QtCore/qdeadlinetimer.h \
+  C:/Qt/6.8.1/mingw_64/include/QtCore/qelapsedtimer.h \
   C:/Qt/6.8.1/mingw_64/include/QtCore/qexceptionhandling.h \
   C:/Qt/6.8.1/mingw_64/include/QtCore/qflags.h \
   C:/Qt/6.8.1/mingw_64/include/QtCore/qfloat16.h \
@@ -86,6 +89,7 @@ C:/Users/arcsh/OneDrive/Documents/spammer/build/Desktop_Qt_6_8_1_MinGW_64_bit-De
   C:/Qt/6.8.1/mingw_64/include/QtCore/qtdeprecationdefinitions.h \
   C:/Qt/6.8.1/mingw_64/include/QtCore/qtdeprecationmarkers.h \
   C:/Qt/6.8.1/mingw_64/include/QtCore/qtenvironmentvariables.h \
+  C:/Qt/6.8.1/mingw_64/include/QtCore/qthread.h \
   C:/Qt/6.8.1/mingw_64/include/QtCore/qtmetamacros.h \
   C:/Qt/6.8.1/mingw_64/include/QtCore/qtnoop.h \
   C:/Qt/6.8.1/mingw_64/include/QtCore/qtpreprocessorsupport.h \

@@ -14,6 +14,8 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     ui->progressBar->setRange(0,100);
     ui->progressBar->setValue(0);
+    // delaytime = ui->delayTime->value();
+    // QTimer::singleShot(delaytime*1000,this,SLOT(spambutton()));
     spambutton();
     stopbutton();
 }
@@ -45,10 +47,12 @@ void MainWindow::spambutton(){
 
         string text = ui->textbox1->toPlainText().toStdString();
         int num = ui->spamnum->value();
+
         spams = new spamback();
         spams->moveToThread(thread1);
         thread1->start();
-
+        int delaytime = ui->delayTime->value();
+        QTimer::singleShot(delaytime*1000,this,[=](){
         //invoking spam --------------------
         if(ui->infinitespam->isChecked()){
             QMetaObject::invokeMethod(spams, "spam", Qt::QueuedConnection,
@@ -60,7 +64,7 @@ void MainWindow::spambutton(){
                                       Q_ARG(int, num));
         }
         //------------------------------------
-
+        });
         //calls the progress bar function
         progress();
 

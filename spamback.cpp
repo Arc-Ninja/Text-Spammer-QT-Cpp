@@ -19,7 +19,7 @@ void spamback::spam(string str, int num){
         swrite.writeOut(str);
         //----------------------------------------------------
         emit progress((int)(((double)(maxnum-num)/(double)maxnum)*100));
-        QThread::msleep(1);
+        QThread::msleep(200);
     }
     emit finished();
     //------------------------------------
@@ -38,7 +38,7 @@ void spamback::spam(string str){
 
         swrite.writeOut(str);
         //----------------------------------------------------
-        QThread::msleep(1);
+        QThread::msleep(200);
     }
     emit finished();
     emit progress(100);

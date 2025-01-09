@@ -2,6 +2,7 @@ C:/Users/arcsh/OneDrive/Documents/spammer/build/Desktop_Qt_6_8_1_MinGW_64_bit-De
   C:/Users/arcsh/OneDrive/Documents/spammer/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/spammer_autogen/moc_predefs.h \
   C:/Qt/6.8.1/mingw_64/include/QtCore/QObject \
   C:/Qt/6.8.1/mingw_64/include/QtCore/QThread \
+  C:/Qt/6.8.1/mingw_64/include/QtCore/QTimer \
   C:/Qt/6.8.1/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.8.1/mingw_64/include/QtCore/q20iterator.h \
   C:/Qt/6.8.1/mingw_64/include/QtCore/q20memory.h \
@@ -16,6 +17,7 @@ C:/Users/arcsh/OneDrive/Documents/spammer/build/Desktop_Qt_6_8_1_MinGW_64_bit-De
   C:/Qt/6.8.1/mingw_64/include/QtCore/qatomic.h \
   C:/Qt/6.8.1/mingw_64/include/QtCore/qatomic_cxx11.h \
   C:/Qt/6.8.1/mingw_64/include/QtCore/qbasicatomic.h \
+  C:/Qt/6.8.1/mingw_64/include/QtCore/qbasictimer.h \
   C:/Qt/6.8.1/mingw_64/include/QtCore/qbindingstorage.h \
   C:/Qt/6.8.1/mingw_64/include/QtCore/qbytearray.h \
   C:/Qt/6.8.1/mingw_64/include/QtCore/qbytearrayalgorithms.h \
@@ -109,6 +111,7 @@ C:/Users/arcsh/OneDrive/Documents/spammer/build/Desktop_Qt_6_8_1_MinGW_64_bit-De
   C:/Qt/6.8.1/mingw_64/include/QtCore/qtenvironmentvariables.h \
   C:/Qt/6.8.1/mingw_64/include/QtCore/qtextstream.h \
   C:/Qt/6.8.1/mingw_64/include/QtCore/qthread.h \
+  C:/Qt/6.8.1/mingw_64/include/QtCore/qtimer.h \
   C:/Qt/6.8.1/mingw_64/include/QtCore/qtmetamacros.h \
   C:/Qt/6.8.1/mingw_64/include/QtCore/qtnoop.h \
   C:/Qt/6.8.1/mingw_64/include/QtCore/qtpreprocessorsupport.h \

@@ -3,6 +3,7 @@
 #include <QPushButton>
 #include <QMainWindow>
 #include <QThread>
+#include <QTimer>
 #include "spamback.h"
 
 QT_BEGIN_NAMESPACE
@@ -24,6 +25,7 @@ private:
     QThread* thread1;
     spamback* spams;
     Ui::MainWindow *ui;
+    // int delaytime;
 
 private slots:
     void progress();

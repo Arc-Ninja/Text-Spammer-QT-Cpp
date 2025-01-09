@@ -3,7 +3,7 @@
 syswrite::syswrite() {}
 void syswrite::writeOut(string str){
     for(char c:str){
-    // QThread::sleep(2);
+    QThread::msleep(5);
 #ifdef __WIN32
     kprs.simulateKeyPressWin(c);
 #endif

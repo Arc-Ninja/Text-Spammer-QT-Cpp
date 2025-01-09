@@ -44,11 +44,14 @@
    <widget class="QPushButton" name="spambutt">
     <property name="geometry">
      <rect>
-      <x>220</x>
+      <x>250</x>
       <y>310</y>
       <width>121</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="toolTip">
+     <string>Start Spamming.</string>
     </property>
     <property name="text">
      <string>SPAM</string>
@@ -63,6 +66,9 @@
       <height>41</height>
      </rect>
     </property>
+    <property name="toolTip">
+     <string>Stop Spamming</string>
+    </property>
     <property name="text">
      <string>STOP</string>
     </property>
@@ -76,6 +82,15 @@
       <height>271</height>
      </rect>
     </property>
+    <property name="toolTip">
+     <string>Text to spam.</string>
+    </property>
+    <property name="documentTitle">
+     <string/>
+    </property>
+    <property name="markdown">
+     <string/>
+    </property>
     <property name="html">
      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
@@ -84,7 +99,13 @@ hr { height: 1px; border-width: 0; }
 li.unchecked::marker { content: &quot;\2610&quot;; }
 li.checked::marker { content: &quot;\2612&quot;; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Type Here ...&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="overwriteMode">
+     <bool>false</bool>
+    </property>
+    <property name="placeholderText">
+     <string>Type or paste the text to spam here...</string>
     </property>
    </widget>
    <widget class="QProgressBar" name="progressBar">
@@ -102,6 +123,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <verstretch>0</verstretch>
      </sizepolicy>
     </property>
+    <property name="toolTip">
+     <string>Spam progress.</string>
+    </property>
     <property name="value">
      <number>24</number>
     </property>
@@ -109,8 +133,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
    <widget class="QSpinBox" name="spamnum">
     <property name="geometry">
      <rect>
-      <x>48</x>
-      <y>325</y>
+      <x>18</x>
+      <y>322</y>
       <width>105</width>
       <height>29</height>
      </rect>
@@ -133,6 +157,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <height>29</height>
      </size>
     </property>
+    <property name="toolTip">
+     <string>Number of times to spam.</string>
+    </property>
     <property name="maximum">
      <number>99999</number>
     </property>
@@ -140,7 +167,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
    <widget class="QCheckBox" name="infinitespam">
     <property name="geometry">
      <rect>
-      <x>50</x>
+      <x>20</x>
       <y>300</y>
       <width>111</width>
       <height>26</height>
@@ -164,8 +191,66 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <height>26</height>
      </size>
     </property>
+    <property name="toolTip">
+     <string>Turn on Infinite Spam.</string>
+    </property>
     <property name="text">
      <string>Infinite Spam</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="delayTime">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>322</y>
+      <width>70</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>70</width>
+      <height>29</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>70</width>
+      <height>29</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string>Delay before spam.</string>
+    </property>
+    <property name="toolTipDuration">
+     <number>-1</number>
+    </property>
+    <property name="statusTip">
+     <string/>
+    </property>
+    <property name="whatsThis">
+     <string/>
+    </property>
+    <property name="accessibleName">
+     <string/>
+    </property>
+    <property name="accessibleDescription">
+     <string/>
+    </property>
+    <property name="specialValueText">
+     <string/>
+    </property>
+    <property name="suffix">
+     <string>s</string>
+    </property>
+    <property name="prefix">
+     <string/>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>60</number>
     </property>
    </widget>
   </widget>
