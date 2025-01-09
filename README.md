@@ -6,3 +6,4 @@
   2. Enter the Installer folder.<br>
   3. Click on the Spammer-Setup.exe file and follow the on screen instructions to install the application.
  </h3>
+<h5>Any kind of suggestion or feedback is appreciated, raise an issue and write your feedback there.</h5>
