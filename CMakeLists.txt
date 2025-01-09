@@ -27,6 +27,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         keypress.h keypress.cpp
         decitohexa.h
         syswrite.h syswrite.cpp
+        resource.qrc
 
 
     )

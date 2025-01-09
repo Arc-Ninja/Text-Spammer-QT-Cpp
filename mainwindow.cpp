@@ -14,6 +14,9 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     ui->progressBar->setRange(0,100);
     ui->progressBar->setValue(0);
+    QIcon icon(":/icon/arc.png");
+    setWindowTitle("Text Spammer");
+    setWindowIcon(icon);
     spambutton();
     stopbutton();
 }
