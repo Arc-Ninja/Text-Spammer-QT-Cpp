@@ -1,6 +1,6 @@
 #ifndef KEYPRESS_H
 #define KEYPRESS_H
-
+#include <QThread>
 #ifdef __WIN32
 #include <windows.h>
 #include <bits/stdc++.h>

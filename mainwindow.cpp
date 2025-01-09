@@ -14,8 +14,6 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     ui->progressBar->setRange(0,100);
     ui->progressBar->setValue(0);
-    // delaytime = ui->delayTime->value();
-    // QTimer::singleShot(delaytime*1000,this,SLOT(spambutton()));
     spambutton();
     stopbutton();
 }

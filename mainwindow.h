@@ -25,7 +25,6 @@ private:
     QThread* thread1;
     spamback* spams;
     Ui::MainWindow *ui;
-    // int delaytime;
 
 private slots:
     void progress();
