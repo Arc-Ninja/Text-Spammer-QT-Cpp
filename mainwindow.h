@@ -31,6 +31,7 @@ private slots:
     void progress();
     void spambutton();
     void stopbutton();
+    void spamnumcheck();
 
 };
 #endif // MAINWINDOW_H

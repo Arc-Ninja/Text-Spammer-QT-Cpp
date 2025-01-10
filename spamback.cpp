@@ -22,6 +22,7 @@ void spamback::spam(string str, int num){
         QThread::msleep(200);
     }
     emit finished();
+    emit progress(0);
     //------------------------------------
 }
 
@@ -31,7 +32,6 @@ void spamback::spam(string str, int num){
 void spamback::spam(string str){
     emit started();
     run = true;
-    emit progress(0);
     while(run){
         // cout<<str<<" infinite mode "<<run<<endl;
         //keypress events------------------------------------
@@ -41,7 +41,6 @@ void spamback::spam(string str){
         QThread::msleep(200);
     }
     emit finished();
-    emit progress(100);
 }
 
 //spam stop fucntion ----------------------------------

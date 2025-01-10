@@ -17,8 +17,10 @@ MainWindow::MainWindow(QWidget *parent)
     QIcon icon(":/icon/arc.png");
     setWindowTitle("Text Spammer");
     setWindowIcon(icon);
+    spamnumcheck();
     spambutton();
     stopbutton();
+
 }
 
 //deconstrcutor---------------------
@@ -103,3 +105,12 @@ void MainWindow::stopbutton(){
     });
 }
 //-----------------------------------------------------------------
+
+
+//spam number selector disabling  ----------------------------------------------
+void MainWindow::spamnumcheck(){
+    QObject::connect(ui->infinitespam, &QCheckBox::checkStateChanged, this, [this](){
+        if(ui->infinitespam->isChecked())ui->spamnum->setEnabled(false);
+        else ui->spamnum->setEnabled(true);
+    });
+}
